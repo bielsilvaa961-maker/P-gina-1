@@ -1,0 +1,192 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #303b70;
+    padding: 20px;
+}
+:root{
+    --azul_escuro:#5861A1;
+    --azul_claro:#A9B4E8;
+    --lavanda_clara:#D9DCF3;
+    --azul_profundo:#303762;
+    --cinza_claro:#F3F4F8;
+    --branco:#FFFFFF;
+}
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+header h2 {
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #303b70;
+    font-size: 12px;
+}
+
+/* Banner */
+.banner {
+    background-color: #9db5e6;
+    min-height: 140px;
+    padding: 35px;
+    display: flex;
+    gap: 10px;
+}
+
+.imagem {
+    background-color: #d9def5;
+    width: 28%;
+    min-height: 80px;
+}
+
+.texto h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #5863a8;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 25px;
+}
+button:hover{
+   background-color: #303b70;
+}
+
+/* Pesquisa */
+.pesquisa {
+    margin: 15px 0;
+    position: relative;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d9def5;
+    border-radius: 8px;
+}
+
+/* Livros */
+.livros h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.lista-livros {
+    display: flex;
+    gap: 20px;
+}
+
+.livro {
+    border: 1px solid #65a1b5;
+    border-radius: 7px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.capa {
+    background-color: #d9def5;
+    width: 50px;
+    min-width: 50px;
+    height: 65px;
+    border-radius: 7px;
+}
+
+.informacoes {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+}
+
+.informacoes small {
+    display: block;
+}
+
+.preco {
+    color: black;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.informacoes button {
+    width: 100%;
+    padding: 4px;
+    font-size: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #303963;
+    color: white;
+    margin-top: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    min-height: 130px;
+}
+
+footer h1 {
+    font-size: 35px;
+    font-family: 'Caprasimo', serif;
+}
+
+footer h4 {
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 9px;
+    margin-bottom: 7px;
+}
+
+.direitos {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-livros {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 25px;
+        padding-bottom: 40px;
+    }
+}
