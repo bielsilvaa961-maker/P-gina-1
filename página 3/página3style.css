@@ -1,0 +1,125 @@
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #303b70;
+    padding: 20px;
+}
+:root{
+    --azul_escuro:#5861A1;
+    --azul_claro:#A9B4E8;
+    --lavanda_clara:#D9DCF3;
+    --azul_profundo:#303762;
+    --cinza_claro:#F3F4F8;
+    --branco:#FFFFFF;
+}
+/* Cabeçalho */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 5px;
+}
+header h2{
+    font-size: 16px;
+}
+nav {
+    display:flex;
+    gap:20px;
+}
+nav a{
+    text-decoration:none;
+    color:var(--azul_escuro);
+    font-size:12px;
+}
+.bloco{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--azul_profundo);
+    min-height: 220px;
+    padding: 25px;
+    gap: 10px;
+
+}
+.imagem {
+    background-color: var(--azul_claro);
+    width: 15%;
+    min-height: 180px;
+    border-radius: 5px;
+}
+.informaçoes {
+    color: var(--branco);
+    padding: 5px;
+}
+.informaçoes p{
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tabela da página 3 */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--branco);
+    color: var(--azul_profundo);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--lavanda_clara);
+}
+
+th {
+    background-color: var(--azul_profundo);
+    color: var(--branco);
+    font-size: 14px;
+}
+
+td {
+    font-size: 13px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cinza_claro);
+}
+
+tbody tr:hover {
+    background-color: var(--lavanda_clara);
+}
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.direitos1{
+    text-align: right;
+}
+#loginho {
+    font-family: 'Caprasimo', serif;
+    font-size:50px;
+}
+footer {
+    background-color: #303963;
+    color: white;
+    margin-top: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    min-height: 130px;
+}

@@ -163,6 +163,7 @@ button:hover{
     gap: 20px;
     justify-content: space-between;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .livro1 {
@@ -218,4 +219,37 @@ footer {
     justify-content: space-around;
     position: relative;
     min-height: 130px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header,
+    .banner2,
+    .lançamento1,
+    footer {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .imagem2 {
+        width: 100%;
+        min-width: 0;
+        min-height: 150px;
+    }
+
+    .img1 {
+        width: 100%;
+    }
+
+    .rodape {
+        width: 100%;
+    }
 }
