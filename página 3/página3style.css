@@ -123,3 +123,88 @@ footer {
     position: relative;
     min-height: 130px;
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .bloco {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .imagem {
+        width: 100%;
+        min-height: 160px;
+    }
+
+    .rodape {
+        width: 100%;
+        gap: 20px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .bloco {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .direitos1 {
+        text-align: left;
+    }
+
+    #loginho {
+        font-size: 38px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+}

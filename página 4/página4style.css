@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #303b70;
+    padding: 20px;
+}
+:root {
+    --azul_escuro: #5861A1;
+    --azul_claro: #A9B4E8;
+    --lavanda_clara: #D9DCF3;
+    --azul_profundo: #303762;
+    --cinza_claro: #F3F4F8;
+    --branco: #FFFFFF;
+}
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 5px;
+}
+header h2 {
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+nav a {
+    color: var(--azul_escuro);
+    font-size: 12px;
+    text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+    color: var(--azul_profundo);
+    text-decoration: underline;
+}
+hr {
+    margin: 10px 0 20px;
+    border: 0;
+    border-top: 1px solid var(--lavanda_clara);
+}
+h2 {
+    color: var(--azul_profundo);
+    font-size: 24px;
+}
+/* CONTEÚDO PRINCIPAL */
+main {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    margin-top: 16px;
+}
+section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 80px;
+    padding: 12px 16px;
+    border: 1px solid var(--azul_claro);
+    border-radius: 8px;
+    background-color: var(--cinza_claro);
+}
+section:hover {
+    border-color: var(--azul_escuro);
+    background-color: var(--lavanda_clara);
+}
+.imagem {
+    flex: 0 0 55px;
+    height: 55px;
+    background-color: var(--lavanda_clara);
+    border: 1px solid var(--azul_claro);
+    border-radius: 8px;
+}
+.informaçoes {
+    min-width: 0;
+}
+.informaçoes h2 {
+    color: var(--azul_profundo);
+    font-size: 16px;
+}
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.direitos1{
+    text-align: right;
+}
+#loginho {
+    font-family: 'Caprasimo', serif;
+    font-size:50px;
+}
+footer {
+    background-color: #303963;
+    color: white;
+    margin-top: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    min-height: 130px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 10px 14px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    section {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .informaçoes h2 {
+        font-size: 14px;
+    }
+}
